@@ -1,0 +1,27 @@
+<configuration>
+
+  <!-- JDBC connection parameters -->
+  <jdbc>
+    <driver>org.postgresql.Driver</driver>
+    <url>jdbc:postgresql://localhost:45432/postgres</url>
+    <user>postgres</user>
+    <password>postgres</password>
+  </jdbc>
+
+  <!-- Generator parameters -->
+  <generator>
+    <database>
+      <name>org.jooq.meta.postgres.PostgresDatabase</name>
+      <includes>.*</includes>
+      <excludes>FLYWAY_SCHEMA_HISTORY</excludes>
+      <!-- In case your database supports catalogs, e.g. SQL Server:
+      <inputCatalog>public</inputCatalog>
+        -->
+      <inputSchema>public</inputSchema>
+    </database>
+    <target>
+      <packageName>me.belu.gen</packageName>
+      <directory>./src/main/java</directory>
+    </target>
+  </generator>
+</configuration>

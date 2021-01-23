@@ -88,6 +88,12 @@
       <artifactId>jooq-meta</artifactId>
       <version>${jooq.version}</version>
     </dependency>
+    <dependency>
+      <groupId>org.jooq</groupId>
+      <artifactId>jooq-codegen</artifactId>
+      <version>${jooq.version}</version>
+      <scope>provided</scope>
+    </dependency>
 
     <!-- TEST -->
     <dependency>
@@ -108,6 +114,24 @@
   </dependencies>
   <build>
     <plugins>
+      <plugin>
+        <groupId>org.jooq</groupId>
+        <artifactId>jooq-codegen-maven</artifactId>
+        <version>${jooq.version}</version>
+        <executions>
+          <execution>
+            <id>jooq-codegen</id>
+            <phase>generate-sources</phase>
+            <goals>
+              <goal>generate</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <skip>false</skip>
+          <configurationFile>jooq-generator.xml</configurationFile>
+        </configuration>
+      </plugin>
       <plugin>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-maven-plugin</artifactId>
