@@ -11,7 +11,7 @@ import kotlin.random.Random
 
 @ApplicationScoped
 @Transactional
-class AuthorsService() {
+class AuthorsService {
 
   @Inject
   lateinit var repo: AuthorsRepo
