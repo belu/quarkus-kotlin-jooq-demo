@@ -6,6 +6,7 @@ package me.belu.gen;
 
 import me.belu.gen.tables.Author;
 import me.belu.gen.tables.records.AuthorRecord;
+
 import org.jooq.TableField;
 import org.jooq.UniqueKey;
 import org.jooq.impl.DSL;

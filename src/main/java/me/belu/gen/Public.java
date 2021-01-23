@@ -4,13 +4,14 @@
 package me.belu.gen;
 
 
+import java.util.Arrays;
+import java.util.List;
+
 import me.belu.gen.tables.Author;
+
 import org.jooq.Catalog;
 import org.jooq.Table;
 import org.jooq.impl.SchemaImpl;
-
-import java.util.Arrays;
-import java.util.List;
 
 
 /**

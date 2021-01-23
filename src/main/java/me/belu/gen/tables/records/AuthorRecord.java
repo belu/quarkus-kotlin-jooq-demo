@@ -5,6 +5,7 @@ package me.belu.gen.tables.records;
 
 
 import me.belu.gen.tables.Author;
+
 import org.jooq.Field;
 import org.jooq.Record1;
 import org.jooq.Record3;
