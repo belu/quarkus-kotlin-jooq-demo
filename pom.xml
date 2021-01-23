@@ -21,6 +21,7 @@
     <quarkus.platform.version>1.11.0.Final</quarkus.platform.version>
     <surefire-plugin.version>2.22.1</surefire-plugin.version>
     <jooq.version>3.14.4</jooq.version>
+    <skip.jooq.generation>true</skip.jooq.generation>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -128,7 +129,7 @@
           </execution>
         </executions>
         <configuration>
-          <skip>false</skip>
+          <skip>${skip.jooq.generation}</skip>
           <configurationFile>jooq-generator.xml</configurationFile>
         </configuration>
       </plugin>
