@@ -8,7 +8,7 @@ Use Docker Compose to deploy a local PostgreSQL database and pgAdmin.
 
 ### pgAdmin
 
-URL: http://127.0.0.1/
+URL: http://127.0.0.1:48080/
 
 Username: `admin@example.com`<br>
 Password: `root`
@@ -22,6 +22,8 @@ Name: `library-db`
 **Connection**
 
 Host name/address: `postgres`<br>
+Port: `5432`
+
 Username: `postgres`<br>
 Password: `postgres`
 

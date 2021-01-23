@@ -3,7 +3,7 @@ services:
   postgres:
     image: "postgres"
     ports:
-      - "5432:5432"
+      - "45432:5432"
     environment:
       - POSTGRES_PASSWORD=postgres
 
@@ -13,7 +13,7 @@ services:
       - postgres
     ports:
       - "53603:53603"
-      - "80:80"
+      - "48080:80"
     environment:
       PGADMIN_DEFAULT_EMAIL: admin@example.com
       PGADMIN_DEFAULT_PASSWORD: root
