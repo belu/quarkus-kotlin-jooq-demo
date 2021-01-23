@@ -1,1 +1,1 @@
-# quarkus-kotlin-jooq-demo
+# quarkus-kotlin-jooq-demo project
