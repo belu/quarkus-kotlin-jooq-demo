@@ -42,7 +42,7 @@ class AuthorsService() {
     val authorRecord = repo.addAuthor(firstName, lastName)
 
     if (Random.nextBoolean()) {
-      throw UnsupportedOperationException("Shit happens. Unable to add $firstName $lastName.")
+      throw UnsupportedOperationException("Sh*t happens. Unable to add $firstName $lastName.")
     }
 
     return authorRecord.mapToDto()
